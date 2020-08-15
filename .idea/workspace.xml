@@ -1,6 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1dc53bb0-4248-42fe-922a-f307dec5e9a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Sokobot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vdurmont_emoji_java_5_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_dseelp_discordsystem_API_0_1_ALPHA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20170516.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Module.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PlayCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/token.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/token.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fx2cUexlnWxRlJuHprBGokVCEm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Ich versuche es nochmal/GIT/TDRStudios/DiscordSystem-IntelliBahh" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1dc53bb0-4248-42fe-922a-f307dec5e9a2" name="Default Changelist" comment="" />
+      <created>1597145502104</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597145502104</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1597146421991">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597146421991" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597146618868">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597146618868" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1597147308488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597147308488" />
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597146617205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597146617205" />
+    <state x="743" y="410" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597147858968">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="410" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597147858968" />
+    <state width="1877" height="123" key="GridCell.Tab.0.bottom" timestamp="1597511824221">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.0.bottom/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597511824221" />
+    <state width="1877" height="123" key="GridCell.Tab.0.center" timestamp="1597511824221">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.0.center/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597511824221" />
+    <state width="1877" height="123" key="GridCell.Tab.0.left" timestamp="1597511824221">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.0.left/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597511824221" />
+    <state width="1877" height="123" key="GridCell.Tab.0.right" timestamp="1597511824221">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.0.right/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597511824221" />
+    <state x="731" y="254" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597147196783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="254" key="com.intellij.testIntegration.createTest.CreateTestDialog/-1920.75.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597147196783" />
   </component>
 </project>

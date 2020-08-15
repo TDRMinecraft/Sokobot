@@ -1,4 +1,7 @@
 import com.vdurmont.emoji.EmojiManager;
+import de.dseelp.discordsystem.api.commands.Command;
+import de.dseelp.discordsystem.api.event.EventHandler;
+import de.dseelp.discordsystem.api.event.Listener;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.*;
@@ -9,26 +12,34 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import java.util.*;
 
-public class Commands extends ListenerAdapter {
+public class Commands implements Listener {
+
+    public Commands() {
+        super();
+
+    }
     HashMap<Long, Game> games = new HashMap<>();
     ArrayList<String> commandsPrefix = new ArrayList<>(Arrays.asList("play", "continue", "stop"));
     ArrayList<String> commandsNoPrefix = new ArrayList<>(Arrays.asList("w", "a", "s", "d", "up", "left", "down",
             "right", "r"));
 
-    @Override
+    @EventHandler
     public void onGuildLeave(GuildLeaveEvent event) {
         Guild guild = event.getGuild();
         Bot.prefixes.remove(guild.getIdLong());
     }
 
-    @Override
+
+
+
+    @EventHandler
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         User user = event.getAuthor();
         Member member = event.getMember();
         Message message = event.getMessage();
         TextChannel channel = event.getChannel();
         Guild guild = event.getGuild();
-        String prefix = Bot.getPrefix(guild);
+       // String prefix = Bot.getPrefix(guild);
         if (user.getId().equals(event.getJDA().getSelfUser().getId())) {
             List<MessageEmbed> embeds = message.getEmbeds();
             if (embeds.size() > 0) {
@@ -40,6 +51,7 @@ public class Commands extends ListenerAdapter {
                         message.addReaction("U+2B06").queue();
                         message.addReaction("U+2B07").queue();
                         message.addReaction("U+1F504").queue();
+
                         MessageEmbed.Footer footerObject = embed.getFooter();
                         if (footerObject != null) {
                             String footer = footerObject.getText();
@@ -59,22 +71,7 @@ public class Commands extends ListenerAdapter {
         String[] args = message.getContentRaw().split("\\s+");
         if (args.length > 0) {
             String arg = args[0].toLowerCase();
-            if (arg.equals(prefix + "prefix")) {
-                if (!hasPermissions(guild, channel)) {
-                    sendInvalidPermissionsMessage(user, channel);
-                    return;
-                }
-                if (member.hasPermission(Permission.ADMINISTRATOR)) {
-                    if (args.length == 2 && args[1].length() == 1) {
-                        String newPrefix = args[1].toLowerCase();
-                        Bot.setPrefix(event.getGuild(), newPrefix);
-                        channel.sendMessage("Prefix successfully changed to ``" + newPrefix + "``.").queue();
-                    } else channel.sendMessage("The prefix must be one character long!").queue();
-                } else
-                    channel.sendMessage(user.getAsMention() + ", you do not have permission to use this " + "command" + ".").queue();
-                // No need to delete prefix-set command
-                // message.delete().queue();
-            } else if (((commandsNoPrefix.contains(arg)) || (arg.length() > 0 && Character.toString(arg.charAt(0)).equals(prefix) && commandsPrefix.contains(arg.substring(1))))) {
+            if (((commandsNoPrefix.contains(arg)) || (arg.length() > 0 && Character.toString(arg.charAt(0)).equals(prefix) && commandsPrefix.contains(arg.substring(1))))) {
                 if (!hasPermissions(guild, channel)) {
                     sendInvalidPermissionsMessage(user, channel);
                     return;
@@ -127,7 +124,7 @@ public class Commands extends ListenerAdapter {
         }
     }
 
-    @Override
+    @EventHandler
     public void onGuildMessageReactionAdd(GuildMessageReactionAddEvent event) {
         User user = event.getUser();
         if (user.isBot()) {
